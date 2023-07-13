@@ -1,10 +1,13 @@
 #!/usr/bin/python3
+# Owned By MoOka
+from sys import argv
 if __name__ == "__main__":
-    from sys import argv
-    len = len(argv)
-    if len == 1:
+    if len(argv) == 1:
         print("0 arguments.")
-    elif len > 1:
-        print("{:d} argument{:s}".format(len-1, "s:" if len > 2 else ":"))
-        for i in range(1, len):
-            print("{:d}: {:s}".format(i, argv[i]))
+    elif len(argv) == 2:
+        print("1 argument:")
+        print("1: {}".format(argv[1]))
+    else:
+        print("{} arguments:".format(len(argv) - 1))
+        for argument in range(1, len(argv)):
+            print("{}: {}".format(argument, argv[argument]))
