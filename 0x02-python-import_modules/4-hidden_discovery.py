@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Owned By MoOka
 import hidden_4
 if __name__ == "__main__":
     folder = dir(hidden_4)
